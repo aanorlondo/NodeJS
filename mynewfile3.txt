@@ -1,0 +1,1 @@
+HELLO, this is a content created with writeFile method
