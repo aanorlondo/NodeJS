@@ -91,3 +91,15 @@ READ
         To read the file, fs uses the readFile method with (the file to read, function(err,data)...)
         A file server Js can be found in "demo-readfile.js". The read file is the "demofile1.html"
         
+
+WRITE
+
+        To write in a file, we have 3 differents situations :
+        (1): the file exists and we want to extend it
+        (2): the file exists and we want to overwrite it
+        (3): the file does not exist and we want to create it
+        
+        We can use different methods to achieve writing in a file using Node.Js.
+        (1): the method fs.appendFile(filename,text,function(err)) can be used to extend a file wy writing at its bottom. It also creates a non empty file (containing the value of 'text') if the file didn't exist.
+        (2): the method fs.writeFile(filename,content,function(err)) can create a new file containing a content. Any existing file with the same filename will be overwritten.
+        (3): the method fs.open(filename,'w',function(err,file)) can be used to create new empty files. The 'w' parameter stands for the 'write' CRUD command.
