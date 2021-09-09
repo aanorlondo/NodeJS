@@ -89,5 +89,5 @@ READ
 
 
         To read the file, fs uses the readFile method with (the file to read, function(err,data)...)
-        A file server Js can be found in "demo-fs.js". The read file is the "demofile.html"
+        A file server Js can be found in "demo-readfile.js". The read file is the "demofile1.html"
         
